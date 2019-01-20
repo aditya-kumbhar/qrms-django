@@ -1,0 +1,116 @@
+<!-- This page is unused -->
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Student Registration</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+    <form class="form-signin">
+
+
+        <h1 class="h3 mb-3 font-weight-normal ">Student Registration</h1>
+
+        <div class="form-group">
+            <label for="studPRN" class="sr-only">PRN</label>
+            <input type="text" id="studPRN" class="form-control" placeholder="PRN" required autofocus>
+        </div>
+        <div class="form-group">
+            <label for="studUsername" class="sr-only">Username</label>
+            <input type="text" id="studUsername" class="form-control" placeholder="Username" required>
+            <label for="studPassword" class="sr-only">Password</label>
+            <input type="password" id="studPassword" class="form-control" placeholder="Password" required>
+            <label for="studEmail" class="sr-only">Email id</label>
+            <input type="email" id="studEmail" class="form-control" placeholder="Email id" required>
+            <label for="studPhone" class="sr-only">Phone Number without +91</label>
+            <input type="tel" id="studPhone" class="form-control" placeholder="Phone Number without +91" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="studFirstName" class="sr-only">First Name</label>
+            <input type="text" id="studFirstName" class="form-control" placeholder="First Name" required>
+            <label for="studMiddleName" class="sr-only">Middle Name</label>
+            <input type="text" id="studMiddleName" class="form-control" placeholder="Middle Name" required>
+            <label for="studLastName" class="sr-only">Last Name</label>
+            <input type="text" id="studLastName" class="form-control" placeholder="Last Name" required>
+        </div>
+
+
+        <div class="form-group">
+            Year
+            <select class="btn btn-primary dropdown-toggle" name="studYear">
+                <option value="FE">FE</option>
+                <option value="SE">SE</option>
+                <option value="TE">TE</option>
+                <option value="BE">BE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            Branch
+            <select class="btn btn-primary dropdown-toggle" name="studBranchId">
+                <option value="Comp">Comp</option>
+                <option value="Mech">Mech</option>
+                <option value="EnTc">EnTc</option>
+                <option value="IT">IT</option>
+                <option value="Civil">Civil</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="studBranchId" class="sr-only">Student Branch</label>
+            <input type="text" id="studBranchId" class="form-control" placeholder="Student Branch" required>
+            <label for="studDivision " class="sr-only">Student Division</label>
+            <input type="text" id="studDivision" class="form-control" placeholder="Student Division" required>
+            <label for="studRollNumber " class="sr-only">Roll Number (BECOB210)</label>
+            <input type="text" id="studRollNumber" class="form-control" placeholder="Roll Number (BECOB210)" required>
+        </div>
+        <div class="form-group">
+            <label for="studFatherName" class="sr-only">Father's Name</label>
+            <input type="text" id="studFatherName" class="form-control" placeholder="Father's First Name" required>
+            <label for="studMotherName" class="sr-only">Mother's Name</label>
+            <input type="text" id="studMotherName" class="form-control" placeholder="Mother's First Name" required>
+            <label for="studParentPhone" class="sr-only">Parent's Phone</label>
+            <input type="tel" id="studParentPhone" class="form-control" placeholder="Parent's Phone Number" required>
+        </div>
+        <div class="form-group">
+            <label for="studCurrAddress">Current Address</label>
+            <textarea class="form-control" rows="4" id="studCurrAddress">Current Address</textarea>
+            <label for="studPin1" class="sr-only">Current Pincode</label>
+            <input type="tel" id="studPin1" class="form-control" placeholder="Current Pincode" required>
+            <label for="studPermAddress">Permanent Address</label>
+            <textarea class="form-control" rows="4" id="studPermAddress">Permanent Address</textarea>
+            <label for="studPin2" class="sr-only">Permanent Pincode</label>
+            <input type="tel" id="studPin2" class="form-control" placeholder="Permanent Pincode" required>
+        </div>
+        <!-- <div class="form-group">
+            <label for="" class="sr-only"></label>
+            <input type="text" id="" class="form-control" placeholder="" required>
+        </div> -->
+
+        <button class="btn btn-lg btn-primary btn-block" id="studRegister" type="submit">Register</button>
+
+        <div class="forgot ">
+            <a href="stud_login.html">Already registered? Login</a>
+        </div>
+
+    </form>
+</body>
+
+</html>

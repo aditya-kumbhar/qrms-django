@@ -1,0 +1,59 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Student Portal</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="../../static/css/bootstrap.min.css" rel="stylesheet"> -->
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+    <!-- jQuery library -->
+    <!-- <script src="{% static 'js/bootstrap.min.js' %}"></script> -->
+
+    <!-- Popper JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
+
+    <!-- Latest compiled JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</head>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="navbar-brand" href="#"><img src="../../static/assets/pccoelogo.png" width="30" height="30" alt=""> QRMS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/student/home">Home</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="/student/courses">Courses</a>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Log Out</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <h1>Helloo.</h1>
+</body>

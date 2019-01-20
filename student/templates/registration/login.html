@@ -1,0 +1,59 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>Student Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/signin.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="form-signin text-center" method="POST">
+                {% csrf_token %}
+                <img class="mb-4" src="{% static 'assets/pccoelogo.png' %}" alt="" width="100" height="100" />
+                <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+                <label for="studUsername" class="sr-only">Username</label>
+                <input type="text" name="username" id="studUsername" class="form-control" placeholder="Username" required autofocus/>
+                <label for="studPassword" class="sr-only">Password</label>
+                <input type="password" name="password" id="studPassword" class="form-control" placeholder="Password" required/>
+
+                <button class="btn btn-lg btn-primary btn-block" id="studLogin" type="submit">Log in</button>
+                <br>
+                <label>
+                    <div class="forgot">
+                        <a href="/password_reset">Forgot password?</a>
+                    </div>
+                </label>
+            </form>
+        </div>
+        <div class="row justify-content-center">
+            {% if form.errors %}
+            <!-- <div class="col-md-6 col-md-offset-6">
+            <div class="alert alert-danger alert-dismissible">
+                <button class="close" type="button" data-dismiss="alert">×</button> Invalid Username or Password.
+            </div> -->
+            <div class="alert alert-danger">
+                Incorrect username or password
+            </div>
+            {% endif %}
+            <!-- </div> -->
+
+        </div>
+    </div>
+</body>
+
+</html>
